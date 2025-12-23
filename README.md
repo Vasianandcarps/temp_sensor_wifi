@@ -3,11 +3,17 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 
 # Parts 
 - Orange Pi 3 WiFi * 1
-<img width="200" alt="зображення" align=center src="https://github.com/user-attachments/assets/dab5d86d-6c8f-4421-9173-b0c9df18d54e" />
+  
+<img width="200" alt="Orange Pi 3 WiFi" align=center src="https://github.com/user-attachments/assets/dab5d86d-6c8f-4421-9173-b0c9df18d54e" />
+
 - ESP32 (30/38pin type-c) * 4 or 6
-<img width="200" alt="зображення" src="https://github.com/user-attachments/assets/1a51a3b0-29a1-487d-b6ee-2f3e4c39d63e" />
+  
+<img width="200" alt="ESP32" align=center src="https://github.com/user-attachments/assets/1a51a3b0-29a1-487d-b6ee-2f3e4c39d63e" />
+
 - DS18B20
-<img width="200" height="512" alt="зображення" src="https://github.com/user-attachments/assets/42074440-b991-48c0-a4aa-3e0e4d49be1c" />
+  
+<img width="200" height="512" alt="DS18B20" align=center src="https://github.com/user-attachments/assets/42074440-b991-48c0-a4aa-3e0e4d49be1c" />
+
 - resistors 4.7 kOhm * 6
 - wire
 ? Arduino Nano * 2
