@@ -16,6 +16,7 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 
 - resistors 4.7 kOhm * 6
 - wire
+- [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE) 
 ? Arduino Nano * 2
 
 # Functions
@@ -26,8 +27,44 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 
   [*Model ESP32 + DS18B20*](https://wokwi.com/projects/451127223539529729)
   
+# Model sensor + ESP32
+```C++
+#include <OneWire.h>
+#include <DallasTemperature.h>
+
+#define ONE_WIRE_BUS 4
+const int Analog_channel_pin= 15;
+double ADC_VALUE = 0;
+double voltage_value = 0; 
+
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&oneWire);
+
+
+void setup() {
+  Serial.begin(115200);
+  sensors.begin();
+}
+
+void loop() {
+// Temperature
+  sensors.requestTemperatures();
+  float temp = sensors.getTempCByIndex(0);
+  Serial.print("Температура: ");
+  Serial.print(temp);
+  Serial.print(" °C | ");
+// Volage
+  ADC_VALUE = analogRead(Analog_channel_pin);
+  voltage_value = (ADC_VALUE * 3.3 ) / (4095);
+  Serial.print("Voltage: ");
+  Serial.print(voltage_value);
+  Serial.print(" V\n");
+                          
+  delay(2000);
+}
+```
+
 # Server set up (Orange Pi 3 WiFi)
 
-# 
 
  
