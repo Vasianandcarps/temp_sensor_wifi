@@ -24,20 +24,20 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 - measure voltage on accu
 - send info from all ESP32 + DS18B20 to Orange Pi 3 Wifi
 - make web site to manage measurements (React/Angular)
-
---- # Hardware ---
-# Model sensor + ESP32
+---
+# Software and hardware of sensor system
+- Model sensor + ESP32
 [*Model and simulation (Wokwi) ESP32 + DS18B20*](https://wokwi.com/projects/451127223539529729)
 
-Image of the model:
+- Image of the model:
 
 <img width="200" alt="Model ESP32 + DS18B20 " src="https://github.com/user-attachments/assets/6520138d-0d08-46f9-95cb-77e060e2bcb1" />
 
-Output:
+- Output:
 
 <img width="200" alt="output" src="https://github.com/user-attachments/assets/4c224ee6-8dba-4492-ae80-441411214dee" />
 
-Code:
+- Code:
 
 ```C++
 #include <OneWire.h>
@@ -74,8 +74,6 @@ void loop() {
   delay(2000);
 }
 ```
-
-# Code eeplanation
 
 # Server set up (Orange Pi 3 WiFi)
 
