@@ -18,7 +18,7 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 - send info from all ESP32 + DS18B20 to Orange Pi 3 Wifi
 - make web site to manage measurements (React/Angular)
 
-  Model ESP32 + DS18B20
+  *Model ESP32 + DS18B20*
   https://wokwi.com/projects/451127223539529729
   
 # Server set up (Orange Pi 3 WiFi)
