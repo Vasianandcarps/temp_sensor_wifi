@@ -17,14 +17,13 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 - resistors 4.7 kOhm * 6
 - wire
 - [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE) 
-? Arduino Nano * 2
 
 ## Functions
 - measure temperature
 - measure voltage on accu
 - send info from all ESP32 + DS18B20 to Orange Pi 3 Wifi
 - make web site to manage measurements (React/Angular)
----
+
 ## Software and hardware of sensor system
 - Model sensor + ESP32
 [*Model and simulation (Wokwi) ESP32 + DS18B20*](https://wokwi.com/projects/451127223539529729)
@@ -33,11 +32,6 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 
 <img width="200" alt="Model ESP32 + DS18B20 " src="https://github.com/user-attachments/assets/6520138d-0d08-46f9-95cb-77e060e2bcb1" />
 
-- Output:
-
-<img width="200" alt="output" src="https://github.com/user-attachments/assets/4c224ee6-8dba-4492-ae80-441411214dee" />
-
-- Code:
 
 ```C++
 #include <OneWire.h>
@@ -74,6 +68,9 @@ void loop() {
   delay(2000);
 }
 ```
+- Output:
+
+<img width="200" alt="output" src="https://github.com/user-attachments/assets/4c224ee6-8dba-4492-ae80-441411214dee" />
 
 ## Server set up (Orange Pi 3 WiFi)
 - SD card with [ubuntu server for Orange Pi 3 LTS](https://drive.google.com/drive/folders/1KzyzyByev-fpZat7yvgYz1omOqFFqt1k) distro
@@ -81,29 +78,28 @@ void loop() {
 
 **Standart loging and password for Orange Pi are:**
 
-Login: orangepi
+Login: `orangepi`
+Password: `orangepi`
 
-Password: orangepi
-
-1. Connect WiFi or LAN:
+ - [ ] Connect WiFi or LAN:
   ```
   sudo nmtui
   ```
-  Then you would see menu. In this menu choose:
-  ```
+- [ ] Then you would see menu. In this menu choose:
+ ```
   Activate a connection
-  ```
-  Choose your WiFi and input password of WiFi. Also you can connect LAN cable and choose LAN network.
-  To test connection:
-  ```
+ ```
+- [ ] Choose your WiFi and input password of WiFi. Also you can connect LAN cable and choose LAN network.
+ To test connection:
+ ```
   ip a
-  ```
-  Output will contain:
-  ```
+ ```
+ Output will contain:
+ ```
   wlan0:UP
   inet IP_ORANGE_PI
   ```
-  After IP:
+  Using IP:
   ```
   sudo systemctl status ssh
   ```
@@ -111,20 +107,21 @@ Password: orangepi
   ```
   active (running)
   ```
-2. Now you can connect to server with PC:
+- [ ] Now you can connect to server with PC:
   ```
   ssh NAME_OF_ADMIN@IP_ORANGE_PI
   ```
-3. Then update apt, install nginx:
-  ```
+- [ ] Then update apt, install nginx:
+ ```
   sudo apt update
   sudo apt upgrade
   sudo apt install nginx -y
-  ```
-  Test and in browser (http://IP_ORANGE_PI):
+ ```
+ Test and in browser (http://IP_ORANGE_PI):
   ```
   systemctl status nginx
   ```
+  Congrats you have made server with http
 
 
 
@@ -136,3 +133,4 @@ Password: orangepi
 
 
  
+
