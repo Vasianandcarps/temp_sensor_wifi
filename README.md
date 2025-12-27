@@ -85,7 +85,7 @@ Login: orangepi
 
 Password: orangepi
 
-1.Firstly connect WiFi or LAN:
+1. Connect WiFi or LAN:
   ```
   sudo nmtui
   ```
@@ -111,11 +111,11 @@ Password: orangepi
   ```
   active (running)
   ```
-2.Now you can connect to server with PC:
+2. Now you can connect to server with PC:
   ```
   ssh NAME_OF_ADMIN@IP_ORANGE_PI
   ```
-3.Then update apt, install nginx:
+3. Then update apt, install nginx:
   ```
   sudo apt update
   sudo apt upgrade
@@ -125,6 +125,12 @@ Password: orangepi
   ```
   systemctl status nginx
   ```
+
+
+
+
+
+
 
 
 
