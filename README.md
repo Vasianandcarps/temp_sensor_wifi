@@ -121,7 +121,7 @@ Choose your WiFi and input password of WiFi. Also you can connect LAN cable and 
   ```
   systemctl status nginx
   ```
-  Congrats you have made server with http
+ ** Congrats you have made server with http! **
 
 
 
