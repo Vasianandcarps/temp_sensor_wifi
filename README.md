@@ -85,11 +85,11 @@ Password: `orangepi`
   ```
   sudo nmtui
   ```
-- [ ] Then you would see menu. In this menu choose:
+Then you would see menu. In this menu choose:
  ```
   Activate a connection
  ```
-- [ ] Choose your WiFi and input password of WiFi. Also you can connect LAN cable and choose LAN network.
+Choose your WiFi and input password of WiFi. Also you can connect LAN cable and choose LAN network.
  To test connection:
  ```
   ip a
