@@ -80,8 +80,10 @@ void loop() {
 - Orange Pi 3 LTS + display (connected with HDMI) + keyboard
 
 **Standart loging and password for Orange Pi are:**
+
 Login: orangepi
 Password: orangepi
+
 Firstly connect WiFi or LAN:
   ```
   sudo nmtui
