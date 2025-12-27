@@ -82,9 +82,10 @@ void loop() {
 **Standart loging and password for Orange Pi are:**
 
 Login: orangepi
+
 Password: orangepi
 
-Firstly connect WiFi or LAN:
+1.Firstly connect WiFi or LAN:
   ```
   sudo nmtui
   ```
@@ -110,11 +111,11 @@ Firstly connect WiFi or LAN:
   ```
   active (running)
   ```
-Now you can connect to server with PC:
+2.Now you can connect to server with PC:
   ```
   ssh NAME_OF_ADMIN@IP_ORANGE_PI
   ```
-Then update apt, install nginx:
+3.Then update apt, install nginx:
   ```
   sudo apt update
   sudo apt upgrade
