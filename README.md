@@ -76,6 +76,54 @@ void loop() {
 ```
 
 ## Server set up (Orange Pi 3 WiFi)
+- SD card with [ubuntu server for Orange Pi 3 LTS](https://drive.google.com/drive/folders/1KzyzyByev-fpZat7yvgYz1omOqFFqt1k) distro
+- Orange Pi 3 LTS + display (connected with HDMI) + keyboard
+
+**Standart loging and password for Orange Pi are:**
+Login: orangepi
+Password: orangepi
+Firstly connect WiFi or LAN:
+  ```
+  sudo nmtui
+  ```
+  Then you would see menu. In this menu choose:
+  ```
+  Activate a connection
+  ```
+  Choose your WiFi and input password of WiFi. Also you can connect LAN cable and choose LAN network.
+  To test connection:
+  ```
+  ip a
+  ```
+  Output will contain:
+  ```
+  wlan0:UP
+  inet IP_ORANGE_PI
+  ```
+  After IP:
+  ```
+  sudo systemctl status ssh
+  ```
+  Should be:
+  ```
+  active (running)
+  ```
+Now you can connect to server with PC:
+  ```
+  ssh NAME_OF_ADMIN@IP_ORANGE_PI
+  ```
+Then update apt, install nginx:
+  ```
+  sudo apt update
+  sudo apt upgrade
+  sudo apt install nginx -y
+  ```
+  Test and in browser (http://IP_ORANGE_PI):
+  ```
+  systemctl status nginx
+  ```
+
+
 
 
  
