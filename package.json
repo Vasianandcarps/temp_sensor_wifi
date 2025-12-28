@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Vasianandcarps.github.io/temp_sensor_wifi/",
+  "homepage": "https://Vasianandcarps.github.io/temp_sensor_wifi",
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d dist",
