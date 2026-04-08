@@ -31,6 +31,10 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 
 <img width="200" alt="Model ESP32 + DS18B20 " src="https://github.com/user-attachments/assets/6520138d-0d08-46f9-95cb-77e060e2bcb1" />
 
+## Software for hardware sensor + ESP32
+!It should be changed a little for your server purposes and id of sensor should be added!
+[File](hardware/sensor_code.cpp)
+
 
 
 ## Server set up (Orange Pi 3 WiFi)
