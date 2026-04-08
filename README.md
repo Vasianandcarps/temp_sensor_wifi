@@ -87,7 +87,7 @@ Choose your WiFi and input password of WiFi. Also you can connect LAN cable and 
   ```
   systemctl status nginx
   ```
- ** Congrats you have made server with http! **
+ ## Congrats you have made server with http! 
 
 # React + TypeScript + Vite site
 If you want start site on your machine load this repo then in cmd run:
