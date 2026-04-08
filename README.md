@@ -33,6 +33,7 @@ WiFi temperature sensor made of Orange Pi 3 WiFi (server and site for managment)
 
 ## Software for hardware sensor + ESP32
 !It should be changed a little for your server purposes and id of sensor should be added!
+
 [File](hardware/sensor_code.cpp)
 
 
