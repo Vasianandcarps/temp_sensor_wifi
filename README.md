@@ -149,9 +149,7 @@ void loop() {
 
 }
 ```
-- Output:
 
-//input img
 
 ## Server set up (Orange Pi 3 WiFi)
 - SD card with [ubuntu server for Orange Pi 3 LTS](https://drive.google.com/drive/folders/1KzyzyByev-fpZat7yvgYz1omOqFFqt1k) distro
@@ -190,7 +188,7 @@ Choose your WiFi and input password of WiFi. Also you can connect LAN cable and 
   ```
 - [ ] Now you can connect to server with PC:
   ```
-  ssh NAME_OF_ADMIN@IP_ORANGE_PI
+  ssh NAME_OF_ADMIN@IP
   ```
 - [ ] Then update apt, install nginx:
  ```
